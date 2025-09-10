@@ -1,5 +1,4 @@
-// src/components/exam/ExamTimer.jsx
-export default function ExamTimer({ timeLeft }) {
+export default function Timer({ timeLeft }) {
   const formatTime = (seconds) => {
     const mins = Math.floor(seconds / 60);
     const secs = seconds % 60;

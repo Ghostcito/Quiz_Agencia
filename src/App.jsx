@@ -61,9 +61,7 @@ function App() {
         {!showResult ? (
           <div className="bg-white rounded-lg shadow-lg p-8">
             <div className="mb-6">
-              <p className="text-lg font-semibold text-gray-700">
-                <Timer timeLeft={timeLeft} />
-              </p>
+              <Timer timeLeft={timeLeft} />
             </div>
 
             <>

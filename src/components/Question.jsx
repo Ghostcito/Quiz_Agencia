@@ -6,12 +6,12 @@ export default function Question({
   onChange,
 }) {
   return (
-    <div class="mb-8">
+    <div className="mb-8">
       <h3 className="text-lg font-semibold text-gray-800 mb-4">
         Pregunta {indexQuestion + 1}: {title}
       </h3>
 
-      <div class="space-y-4">
+      <div className="space-y-4">
         {options.map((option, indexOption) => (
           <label
             key={indexOption}
