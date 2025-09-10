@@ -7,6 +7,8 @@ export default function ExamResults({
   const correctAnswers = questions.filter((q, index) => {
     return answers[index] === q.correct;
   }).length;
+
+  const approved = correctAnswers >= 7;
   return (
     <div className="mt-10 bg-white rounded-xl shadow-lg p-8 border border-gray-200">
       <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
@@ -15,7 +17,11 @@ export default function ExamResults({
 
       {/* Puntaje */}
       <div className="text-center mb-4">
-        <span className="text-5xl font-extrabold text-red-600">
+        <span
+          className={`text-5xl font-extrabold ${
+            approved ? "text-green-600" : "text-red-600"
+          }`}
+        >
           {correctAnswers} / {questions.length}
         </span>
       </div>
@@ -28,7 +34,7 @@ export default function ExamResults({
 
       {/* Mensaje de aprobación */}
       <div className="text-center mb-8">
-        {correctAnswers >= 7 ? (
+        {approved ? (
           <p className="text-green-600 font-semibold">
             ¡Felicidades! Aprobaste el examen. 😊
           </p>

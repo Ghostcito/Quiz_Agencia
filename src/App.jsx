@@ -10,7 +10,7 @@ import Results from "./components/Results";
 function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState([]);
-  const [timeLeft, setTimeLeft] = useState(20); // 15 minutes in seconds
+  const [timeLeft, setTimeLeft] = useState(900); // 15 minutes in seconds
   const hasAnswered = answers[currentQuestion] !== undefined;
   const isLastQuestion = currentQuestion === questions.length - 1;
   const [showResult, setShowResult] = useState(false);
