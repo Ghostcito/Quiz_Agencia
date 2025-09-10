@@ -1,66 +1,35 @@
-export default function Question() {
+export default function Question({
+  title,
+  index,
+  options,
+  selected,
+  onChange,
+}) {
   return (
     <div class="mb-8">
-      <h3 class="text-xl font-semibold text-gray-800 mb-6">
-        ¿Qué significa OECE?
+      <h3 className="text-lg font-semibold text-gray-800 mb-4">
+        Pregunta {index + 1}: {title}
       </h3>
 
       <div class="space-y-4">
-        <label class="block">
-          <input
-            type="radio"
-            name="oece_answer"
-            value="1"
-            class="sr-only peer"
-          />
-          <div class="p-4 bg-gray-100 rounded-lg border-2 border-transparent cursor-pointer hover:bg-gray-200 peer-checked:border-blue-500 peer-checked:bg-blue-50 transition-all">
-            <span class="text-gray-700">
-              Oficina de Evaluación de Contratos Estatales
+        {options.map((option, index) => (
+          <label
+            key={index}
+            className="flex items-center p-4 rounded-lg border-2 border-gray-200 bg-white hover:bg-blue-50 hover:border-blue-300 cursor-pointer transition-all duration-200 group"
+          >
+            <input
+              type="radio"
+              name={`question-${index}`}
+              value={option}
+              checked={selected === option}
+              onChange={(e) => onChange(e.target.value)}
+              className="mr-4 h-5 w-5 text-blue-600 focus:ring-blue-500 accent-blue-600"
+            />
+            <span className="text-gray-800 text-lg group-hover:text-blue-700 font-medium transition">
+              {option}
             </span>
-          </div>
-        </label>
-
-        <label class="block">
-          <input
-            type="radio"
-            name="oece_answer"
-            value="2"
-            class="sr-only peer"
-          />
-          <div class="p-4 bg-gray-100 rounded-lg border-2 border-transparent cursor-pointer hover:bg-gray-200 peer-checked:border-blue-500 peer-checked:bg-blue-50 transition-all">
-            <span class="text-gray-700">
-              Órgano Encargado de las Contrataciones del Estado
-            </span>
-          </div>
-        </label>
-
-        <label class="block">
-          <input
-            type="radio"
-            name="oece_answer"
-            value="3"
-            class="sr-only peer"
-          />
-          <div class="p-4 bg-gray-100 rounded-lg border-2 border-transparent cursor-pointer hover:bg-gray-200 peer-checked:border-blue-500 peer-checked:bg-blue-50 transition-all">
-            <span class="text-gray-700">
-              Oficina de Exámenes y Certificaciones Estatales
-            </span>
-          </div>
-        </label>
-
-        <label class="block">
-          <input
-            type="radio"
-            name="oece_answer"
-            value="4"
-            class="sr-only peer"
-          />
-          <div class="p-4 bg-gray-100 rounded-lg border-2 border-transparent cursor-pointer hover:bg-gray-200 peer-checked:border-blue-500 peer-checked:bg-blue-50 transition-all">
-            <span class="text-gray-700">
-              Organismo Especial de Compras Estatales
-            </span>
-          </div>
-        </label>
+          </label>
+        ))}
       </div>
     </div>
   );
