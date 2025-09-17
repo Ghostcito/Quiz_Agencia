@@ -1,3 +1,12 @@
+const formatTextWithLineBreaks = (text) => {
+  return text.split("\n").map((line, index, array) => (
+    <span key={index}>
+      {line}
+      {index < array.length - 1 && <br />}
+    </span>
+  ));
+};
+
 export default function Question({
   title,
   indexQuestion,
@@ -8,7 +17,7 @@ export default function Question({
   return (
     <div className="mb-8">
       <h3 className="text-lg font-semibold text-gray-800 mb-4">
-        Pregunta {indexQuestion + 1}: {title}
+        Pregunta {indexQuestion + 1}: {formatTextWithLineBreaks(title)}
       </h3>
 
       <div className="space-y-4">

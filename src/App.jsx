@@ -7,12 +7,18 @@ import { questions } from "./data/questions";
 import ProgressBar from "./components/ui/ProgressBar";
 import Results from "./components/Results";
 
+// Función para seleccionar 10 preguntas aleatorias
+const getRandomQuestions = () =>
+  questions.sort(() => Math.random() - 0.5).slice(0, 10);
+
 function App() {
+  const [selectedQuestions, setSelectedQuestions] =
+    useState(getRandomQuestions);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState([]);
   const [timeLeft, setTimeLeft] = useState(900); // 15 minutes in seconds
   const hasAnswered = answers[currentQuestion] !== undefined;
-  const isLastQuestion = currentQuestion === questions.length - 1;
+  const isLastQuestion = currentQuestion === selectedQuestions.length - 1;
   const [showResult, setShowResult] = useState(false);
 
   useEffect(() => {
@@ -28,7 +34,7 @@ function App() {
   }, [timeLeft, showResult]);
 
   const nextQuestion = () => {
-    if (currentQuestion < questions.length - 1) {
+    if (currentQuestion < selectedQuestions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     }
   };
@@ -48,6 +54,7 @@ function App() {
 
   // Reiniciar examen
   const handleRestart = () => {
+    setSelectedQuestions(getRandomQuestions());
     setShowResult(false);
     setCurrentQuestion(0);
     setAnswers([]);
@@ -66,17 +73,20 @@ function App() {
 
             <>
               <Question
-                title={questions[currentQuestion].question}
+                title={selectedQuestions[currentQuestion].question}
                 indexQuestion={currentQuestion}
-                options={questions[currentQuestion].options}
+                options={selectedQuestions[currentQuestion].options}
                 selected={answers[currentQuestion]}
                 onChange={handleAnswerChange}
               />
 
-              <div className="flex items-center justify-between pt-6 border-t border-gray-200">
+              <div
+                className="flex flex-col md:flex-row items-center justify-between pt-6 border-t border-gray-200
+                space-y-4 md:space-y-0 md:space-x-6"
+              >
                 <ProgressBar
                   current={currentQuestion}
-                  total={questions.length}
+                  total={selectedQuestions.length}
                   onJumpToQuestion={setCurrentQuestion}
                 />
 
@@ -110,7 +120,7 @@ function App() {
           </div>
         ) : (
           <Results
-            questions={questions}
+            questions={selectedQuestions}
             answers={answers}
             timeLeftStart={900 - timeLeft}
             onRestart={handleRestart}
