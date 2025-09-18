@@ -8,5 +8,19 @@
   <body class="min-h-screen bg-gray-100">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      function sendHeight() {
+        const height = document.body.scrollHeight;
+        window.parent.postMessage({ type: "resizeQuiz", height }, "*");
+      }
+
+      // Forzar a que se ejecute apenas se renderiza el contenido
+      window.addEventListener("DOMContentLoaded", sendHeight);
+      window.addEventListener("load", sendHeight);
+      window.addEventListener("resize", sendHeight);
+
+      // Extra: repetir por si React cambia pantallas
+      setInterval(sendHeight, 500);
+    </script>
   </body>
 </html>

@@ -1,11 +1,11 @@
 import "./App.css";
-import Header from "./components/Header";
 import { useEffect, useState } from "react";
 import Timer from "./components/ui/Timer";
 import Question from "./components/Question";
 import { questions } from "./data/questions";
 import ProgressBar from "./components/ui/ProgressBar";
 import Results from "./components/Results";
+import StartExam from "./components/StartExam";
 
 // Función para seleccionar 10 preguntas aleatorias
 const getRandomQuestions = () =>
@@ -20,9 +20,18 @@ function App() {
   const hasAnswered = answers[currentQuestion] !== undefined;
   const isLastQuestion = currentQuestion === selectedQuestions.length - 1;
   const [showResult, setShowResult] = useState(false);
+  const [startExam, setStartExam] = useState(false);
+
+  const handleStart = () => {
+    setStartExam(true);
+    setTimeLeft(900);
+    setSelectedQuestions(getRandomQuestions());
+    setCurrentQuestion(0);
+    setAnswers([]);
+  };
 
   useEffect(() => {
-    if (showResult) {
+    if (!startExam || showResult) {
       return;
     } else if (timeLeft === 0) {
       setShowResult(true);
@@ -31,7 +40,7 @@ function App() {
 
     const timer = setTimeout(() => setTimeLeft(timeLeft - 1), 1000);
     return () => clearTimeout(timer);
-  }, [timeLeft, showResult]);
+  }, [timeLeft, showResult, startExam]);
 
   const nextQuestion = () => {
     if (currentQuestion < selectedQuestions.length - 1) {
@@ -54,18 +63,16 @@ function App() {
 
   // Reiniciar examen
   const handleRestart = () => {
-    setSelectedQuestions(getRandomQuestions());
+    setStartExam(false);
     setShowResult(false);
-    setCurrentQuestion(0);
-    setAnswers([]);
-    setTimeLeft(900);
   };
 
   return (
     <>
-      <Header />
       <main className="max-w-4xl mx-auto px-4 py-8">
-        {!showResult ? (
+        {!startExam ? (
+          <StartExam handleStart={handleStart} />
+        ) : !showResult ? (
           <div className="bg-white rounded-lg shadow-lg p-8">
             <div className="mb-6">
               <Timer timeLeft={timeLeft} />
@@ -127,9 +134,6 @@ function App() {
           />
         )}
       </main>
-      <footer className="mt-10 text-center text-gray-500 text-sm">
-        © 2025 Simulador OECE Gratis
-      </footer>
     </>
   );
 }
