@@ -33,6 +33,21 @@ export default function Question({
               checked={selected === indexOption}
               onChange={(e) => onChange(e.target.value)}
               className="mr-4 h-5 w-5 text-blue-600 focus:ring-blue-500 accent-blue-600"
+              style={{
+                // fuerza tamaño y alineación consistentes aunque el texto haga wrap
+                width: 20,
+                height: 20,
+                minWidth: 20,
+                minHeight: 20,
+                display: "inline-block",
+                boxSizing: "border-box",
+                lineHeight: "normal",
+                WebkitAppearance: "radio",
+                MozAppearance: "radio",
+                appearance: "radio",
+                verticalAlign: "middle",
+                transform: "scale(1)", // evita escalados inesperados
+              }}
             />
             <span className="text-gray-800 text-lg group-hover:text-blue-700 font-medium transition">
               {option}

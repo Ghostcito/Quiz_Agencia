@@ -4,7 +4,55 @@ export const questions = [
   {
     id: 1,
     question:
-      "La Dependencia Encargada de las Contrataciones (DEC) de una entidad está realizando la segmentación de las contrataciones para el próximo año. Identifican un requerimiento de un bien que, en los últimos dos años, ha tenido procedimientos de selección declarados desiertos en más de una ocasión y cuyo promedio de postores ha sido menor a tres. Según el Reglamento, ¿en qué categoría de riesgo se clasificaría esta contratación y cuál sería la orientación principal de su estrategia?",
+      "Si un procedimiento de selección es declarado desierto, ¿es siempre necesaria una nueva aprobación del expediente de contratación para la siguiente convocatoria?",
+    options: [
+      "Sí, siempre se requiere una nueva aprobación.",
+      "No, la aprobación anterior es válida a menos que se requiera modificar documentos del expediente por las causas del desierto.",
+      "Solo si el monto de la contratación supera un determinado umbral.",
+      "Depende del tipo de procedimiento de selección.",
+    ],
+    correct: 1,
+  },
+  {
+    id: 2,
+    question:
+      "El Gerente Municipal de una Municipalidad (quien ejerce la autoridad de la gestión administrativa) debe aprobar el expediente de contratación para la adquisición de mobiliario de oficina. La Dependencia Encargada de las Contrataciones (DEC) ha preparado el expediente con todos los documentos requeridos por el Reglamento. ¿Puede el Gerente Municipal delegar esta aprobación en el jefe de la DEC?",
+    options: [
+      "Sí, la Ley permite la delegación de facultades de la autoridad de la gestión administrativa.",
+      "No, la aprobación del expediente de contratación es una facultad indelegable del Gerente Municipal.",
+      "Sí, siempre que la cuantía de la contratación no supere las 50 UIT.",
+      "No, solo el Titular de la Entidad puede delegar facultades.",
+    ],
+    correct: 0,
+  },
+  {
+    id: 3,
+    question:
+      "Considerando que el Reglamento prioriza el uso de medios electrónicos para la custodia del expediente de contratación y que la Ley establece la validez de los actos registrados digitalmente, ¿cuál es la principal implicación para la Dependencia Encargada de las Contrataciones (DEC) en relación con la gestión de la información del expediente?",
+    options: [
+      "La DEC solo necesita conservar copias de seguridad de los documentos físicos, ya que la Pladicop es la fuente oficial.",
+      "La responsabilidad de la DEC sobre el expediente se limita a asegurar el correcto funcionamiento técnico de la Pladicop.",
+      "La DEC es responsable de asegurar que toda la información del expediente, independientemente de su origen (físico o digital), esté completa, registrada en la Pladicop y disponible, reconociendo la plena validez de los actos digitales.",
+      "La custodia electrónica en Pladicop exime a la DEC de la responsabilidad por la disponibilidad del expediente para auditorías externas.",
+    ],
+    correct: 2,
+  },
+  {
+    id: 4,
+    question:
+      "El área usuaria de una entidad ha formulado un requerimiento para un servicio especializado. La DEC revisa el requerimiento y propone una modificación a su contenido. Según el Reglamento, ¿qué acción debe realizar la DEC y qué facultad tiene el área usuaria ante esta propuesta?",
+    options: [
+      "La DEC debe aceptar el requerimiento original sin modificaciones; el área usuaria no tiene facultad para objetar.",
+      "La DEC puede modificar el requerimiento directamente; el área usuaria solo puede dar su conformidad posterior.",
+      "La DEC propone la modificación y solicita la no objeción del área usuaria; el área usuaria puede objetar si la modificación no satisface su necesidad.",
+      "La DEC y el área usuaria deben someter la propuesta de modificación a la autoridad de la gestión administrativa.",
+    ],
+    correct: 2,
+  },
+  {
+    id: 5,
+    question:
+      "La Dependencia Encargada de las Contrataciones (DEC) identifica un requerimiento de un bien que, en los últimos dos años, ha tenido procedimientos declarados desiertos en más de una ocasión y un promedio de postores menor a tres. Según el Reglamento, ¿en qué categoría de riesgo se clasificaría esta contratación y cuál sería la orientación de su estrategia?",
     options: [
       "Categoría Operacional; orientación a la reducción de costos.",
       "Categoría Rutinaria; orientación a la atención oportuna.",
@@ -14,9 +62,9 @@ export const questions = [
     correct: 2,
   },
   {
-    id: 2,
+    id: 6,
     question:
-      "Una entidad está evaluando el sistema de entrega más adecuado para una obra de alta complejidad según la clasificación del SNPMGI, donde se busca que el contratista se involucre desde las primeras etapas para gestionar el diseño y la ejecución. Según el Reglamento, ¿qué sistema de entrega se ajustaría a esta necesidad y qué tipo de contrato estandarizado internacional se utilizaría obligatoriamente?",
+      "Una entidad está evaluando el sistema de entrega para una obra de alta complejidad donde se busca que el contratista se involucre desde las primeras etapas. Según el Reglamento, ¿qué sistema de entrega se ajustaría a esta necesidad y qué tipo de contrato estandarizado internacional se utilizaría obligatoriamente?",
     options: [
       "Solo construcción; no requiere contrato estandarizado internacional.",
       "Diseño y construcción; puede usar contrato estandarizado internacional.",
@@ -26,21 +74,21 @@ export const questions = [
     correct: 2,
   },
   {
-    id: 3,
+    id: 7,
     question:
       "¿Cómo se realiza la segmentación de las contrataciones en el caso de obras y consultorías de obra?",
     options: [
       "Se clasifican en Rutinarias, Operacionales, Críticas y Estratégicas, igual que bienes y servicios.",
       "Se clasifican en Básicas y Avanzadas, considerando criterios como el grado de innovación, complejidad y experiencia previa de la entidad.",
-      "Se clasifican según el sistema de entrega elegido (Solo Construcción, Diseño y Construcción, etc.).",
-      "La segmentación solo aplica a bienes y servicios, no a obras y consultorías de obra.",
+      "Se clasifican según el sistema de entrega elegido.",
+      "La segmentación solo aplica a bienes y servicios.",
     ],
     correct: 1,
   },
   {
-    id: 4,
+    id: 8,
     question:
-      "La estrategia de contratación debe incluir los roles y responsabilidades de los involucrados al interior de la entidad contratante durante la fase de selección. ¿Quiénes son estos involucrados?",
+      "La estrategia de contratación debe incluir los roles y responsabilidades de los involucrados en la fase de selección. ¿Quiénes son estos involucrados?",
     options: [
       "El Titular de la Entidad y la autoridad de la gestión administrativa.",
       "El área usuaria y la Dependencia Encargada de las Contrataciones (DEC).",
@@ -50,21 +98,21 @@ export const questions = [
     correct: 2,
   },
   {
-    id: 5,
+    id: 9,
     question:
-      "Si durante la fase de selección, como resultado de una consulta u observación a las bases, se determina que es necesario precisar o ajustar el requerimiento, ¿qué deben hacer los evaluadores según el Reglamento?",
+      "Si durante la fase de selección, por una consulta, se necesita ajustar el requerimiento, ¿qué deben hacer los evaluadores?",
     options: [
-      "Declarar la nulidad del procedimiento de selección y devolver el expediente al área usuaria.",
-      "Rechazar la consulta u observación por modificar el requerimiento.",
+      "Declarar la nulidad del procedimiento.",
+      "Rechazar la consulta por modificar el requerimiento.",
       "Proponer modificaciones y solicitar la no objeción del área usuaria, o devolver el expediente a la DEC si la modificación no satisface la necesidad.",
-      "Integrar las bases sin modificar el requerimiento y continuar con el procedimiento.",
+      "Integrar las bases sin modificar el requerimiento.",
     ],
     correct: 2,
   },
   {
-    id: 6,
+    id: 10,
     question:
-      "Una entidad va a convocar una Licitación Pública de Obras con Precalificación debido a que la cuantía es de S/ 80 000 000,00. Según el Reglamento, ¿qué tipo de evaluador debe estar a cargo de este procedimiento de selección?",
+      "Una entidad va a convocar una Licitación Pública de Obras con Precalificación por S/ 80 000 000,00. ¿Qué tipo de evaluador debe estar a cargo?",
     options: [
       "Solo un Oficial de compra.",
       "Un Comité o un Jurado.",
@@ -74,286 +122,477 @@ export const questions = [
     correct: 1,
   },
   {
-    id: 7,
-    question:
-      "Una entidad necesita adquirir una tecnología sanitaria para tratar una enfermedad oncológica, y busca gestionar la incertidumbre sobre su funcionalidad y minimizar el impacto presupuestal. Según el Reglamento, ¿qué modalidad de contratación pública eficiente sería la más adecuada para este fin y qué tipo de acuerdos podría implicar?",
-    options: [
-      "Acuerdo Marco; implicaría acuerdos de suministro periódico.",
-      "Compra por Encargo; implicaría un convenio con un organismo internacional.",
-      "Mecanismos Diferenciados de Adquisición (MDA); podría implicar acuerdos de riesgo compartido basados en desempeño.",
-      "Compra Centralizada; implicaría la transferencia de partidas a Perú Compras.",
-    ],
-    correct: 2,
-  },
-  {
-    id: 8,
-    question:
-      "Una entidad aprobó su PAC del CMN al inicio del año fiscal. A mitad del año, debido a una nueva política sectorial, surge la necesidad imprevista de contratar un servicio especializado que no estaba incluido. Según el Reglamento, para poder incluir esta contratación en su planificación y proceder con su segmentación y posterior contratación, ¿qué debe ocurrir primero con el CMN?",
-    options: [
-      "La entidad debe convocar un procedimiento de selección no competitivo y regularizar la inclusión en el CMN posteriormente.",
-      "El área usuaria debe solicitar la modificación del CMN para incluir la nueva necesidad antes de que la DEC segmente la contratación.",
-      "La DEC debe proceder a la segmentación y luego solicitar al área usuaria que justifique la inclusión en una adenda al PAC del CMN.",
-      "La entidad debe esperar la aprobación de un crédito suplementario antes de realizar cualquier acción sobre el CMN.",
-    ],
-    correct: 1,
-  },
-  {
-    id: 9,
-    question:
-      "Durante un procedimiento de selección competitivo, el oficial de compra necesita una opinión técnica sobre un aspecto específico del requerimiento para absolver una consulta. ¿Están los evaluadores facultados para solicitar esta opinión a cualquier unidad de organización de la entidad y es vinculante dicha opinión?",
-    options: [
-      "Sí, están facultados y la opinión es vinculante para su decisión.",
-      "No, solo pueden solicitar opiniones al área usuaria y son vinculantes.",
-      "Sí, están facultados, pero la opinión técnica o absolución de la consulta no es vinculante para el comité o jurado.",
-      "No, los evaluadores deben resolver todas las consultas basándose únicamente en las bases y el expediente de contratación.",
-    ],
-    correct: 2,
-  },
-  {
-    id: 10,
-    question:
-      "El área usuaria de una entidad, al formular su requerimiento para la adquisición de equipos de cómputo, identifica que existe una ficha de homologación aprobada y vigente para dichos equipos, por lo que adecúa su requerimiento a esta. La Dependencia Encargada de las Contrataciones (DEC) determina que el valor estimado de la contratación es de S/ 300,000.00. Adicionalmente, se verifica que estos equipos de cómputo homologados también cuentan con una ficha técnica en el Listado de Bienes y Servicios Comunes y su contratación por Subasta Inversa Electrónica (SIE) es obligatoria. Al respecto, señale la alternativa correcta:",
-    options: [
-      "La entidad debe convocar una Licitación Pública Abreviada, ya que el monto es S/ 300,000.00 y la homologación prevalece sobre la ficha técnica.",
-      "La entidad debe utilizar obligatoriamente la Subasta Inversa Electrónica, empleando la ficha técnica, ya que esta prevalece para bienes comunes incluso si están homologados.",
-      "No es necesario utilizar la ficha de homologación ni la ficha técnica si la entidad considera que puede obtener mejores condiciones con un requerimiento propio.",
-      "El área usuaria es la única responsable de determinar el procedimiento de selección, independientemente de la existencia de fichas de homologación o técnicas.",
-    ],
-    correct: 1,
-  },
-  {
     id: 11,
     question:
-      "Respecto a la designación de un Comité de Selección, ¿qué información esencial concerniente a este órgano debe ser obligatoriamente consignada por la Pladicop durante la fase de actuaciones preparatorias?",
+      "Una entidad necesita adquirir una tecnología sanitaria para tratar una enfermedad oncológica, buscando gestionar la incertidumbre funcional y el impacto presupuestal. ¿Qué modalidad de contratación y qué tipo de acuerdo sería el más adecuado?",
     options: [
-      "Únicamente la lista de los integrantes titulares del comité, siendo opcional el registro del acto de designación y los datos del funcionario aprobador.",
-      "Los datos del acto de designación y la lista de integrantes (titulares y suplentes), pero el registro de los datos del funcionario que aprueba la designación es facultativo.",
-      "Los datos completos del acto de designación (ej. número de resolución, fecha), la información del funcionario que aprueba dicha designación y la lista detallada de los integrantes del comité.",
-      "Solo se requiere registrar el número de la resolución de designación del comité, los demás datos son de manejo interno de la entidad.",
+      "Acuerdo Marco; acuerdos de suministro periódico.",
+      "Compra por Encargo; convenio con organismo internacional.",
+      "Mecanismos Diferenciados de Adquisición (MDA); acuerdos de riesgo compartido basados en desempeño.",
+      "Compra Centralizada; transferencia de partidas a Perú Compras.",
     ],
     correct: 2,
   },
   {
     id: 12,
     question:
-      "Una entidad requiere contratar la elaboración del expediente técnico y la posterior ejecución de una obra urbana. En la estrategia de contratación, se ha determinado que el sistema de entrega más adecuado es el de 'Diseño y Construcción'. Según el Reglamento, ¿qué procedimiento de selección competitivo se utilizaría y cómo se evaluaría la oferta económica si la cuantía de la obra es de S/ 15 000 000,00?",
+      "Surge una necesidad imprevista de contratar un servicio no incluido en el PAC del CMN. Para poder incluirla y proceder, ¿qué debe ocurrir primero con el CMN?",
     options: [
-      "Licitación Pública para obras; la oferta económica se evalúa sobre 100 puntos considerando el costo total (diseño y construcción).",
-      "Concurso Público para consultorías; la oferta económica del diseño es fija y se evalúa la propuesta técnica de la construcción.",
-      "Licitación Pública para obras; el costo de la ejecución de la obra es fijo al 100% de la cuantía de ese rubro, y se evalúa económicamente solo el costo del diseño.",
-      "Licitación Pública de obras con precalificación; la oferta económica se evalúa mediante un sistema de puntaje inversamente proporcional al monto total ofertado.",
+      "Convocar un procedimiento no competitivo y regularizar después.",
+      "El área usuaria debe solicitar la modificación del CMN para incluir la nueva necesidad antes de que la DEC segmente la contratación.",
+      "La DEC debe segmentar y luego solicitar la justificación al área usuaria.",
+      "Esperar la aprobación de un crédito suplementario.",
     ],
-    correct: 2,
+    correct: 1,
   },
   {
     id: 13,
     question:
-      "En un procedimiento de selección que contempla la elevación del pliego de absolución de consultas y observaciones al OECE, ¿cuál es el plazo máximo que tiene el OECE para notificar su pronunciamiento con la integración definitiva de bases, y qué sucede si el OECE solicita información adicional a la entidad contratante?",
+      "¿Están los evaluadores facultados para solicitar opinión técnica a cualquier unidad de la entidad y es esta opinión vinculante?",
     options: [
-      "Diez días hábiles desde el registro de la elevación; el plazo no se prorroga por solicitud de información.",
-      "Quince días hábiles desde el registro de la elevación; el plazo se prorroga automáticamente por cinco días hábiles si se solicita información.",
-      "Diez días hábiles desde el registro de la elevación o desde recibida la información solicitada; el plazo para notificar el pronunciamiento se contabiliza desde el último de estos eventos.",
-      "Siete días hábiles desde el registro de la elevación; el OECE no puede solicitar información adicional en esta etapa.",
+      "Sí, y la opinión es vinculante.",
+      "No, solo pueden solicitar opiniones al área usuaria y son vinculantes.",
+      "Sí, están facultados, pero la opinión técnica no es vinculante para el comité o jurado.",
+      "No, deben resolver basándose solo en las bases.",
     ],
     correct: 2,
   },
   {
     id: 14,
     question:
-      "Un comité de selección, al evaluar las ofertas en una Licitación Pública, identifica una situación no prevista explícitamente en las bases ni en el Reglamento, pero que podría afectar la igualdad de trato entre los postores. Para tomar una decisión fundamentada y coherente con el sistema de contratación pública, además de la Ley y el Reglamento, ¿qué tipo de pronunciamientos emitidos por el Tribunal de Contrataciones Públicas (TCP) debería considerar el comité como criterio interpretativo relevante, según la Ley?",
+      "Un requerimiento de equipos de cómputo cuenta con ficha de homologación y también con ficha técnica para Subasta Inversa Electrónica (SIE) obligatoria. ¿Qué procedimiento debe seguir la entidad?",
     options: [
-      "Únicamente las resoluciones sancionadoras emitidas por el TCP.",
-      "Las opiniones consultivas que el TCP emite a solicitud de las entidades.",
-      "Los precedentes de observancia obligatoria que el TCP emite mediante acuerdos adoptados en sala plena.",
-      "Los informes de supervisión del OECE que hayan analizado casos similares.",
+      "Licitación Pública Abreviada, pues la homologación prevalece.",
+      "Utilizar obligatoriamente la Subasta Inversa Electrónica con la ficha técnica, ya que esta prevalece para bienes comunes.",
+      "No es necesario usar ninguna ficha si la entidad considera obtener mejores condiciones.",
+      "El área usuaria determina el procedimiento.",
     ],
-    correct: 2,
+    correct: 1,
   },
   {
     id: 15,
     question:
-      "Una entidad otorga la buena pro en una Licitación Pública. Un postor interpone un recurso de apelación. Mientras el recurso está en trámite y antes de que se emita la resolución, la entidad procede a perfeccionar el contrato con el postor ganador. Según la Ley, ¿cuál es la validez del contrato perfeccionado en esta situación?",
+      "Respecto a la designación de un Comité de Selección, ¿qué información esencial debe ser obligatoriamente consignada en la Pladicop?",
     options: [
-      "El contrato es válido, pero su ejecución se suspende hasta la resolución del recurso.",
-      "El contrato es válido, ya que la interposición del recurso no afecta el perfeccionamiento.",
-      "La validez del contrato dependerá de si el recurso de apelación es declarado fundado o infundado.",
-      "El contrato es nulo, porque los actos posteriores a la interposición del recurso y antes de la resolución son nulos.",
+      "Únicamente la lista de los integrantes titulares.",
+      "Los datos del acto de designación y la lista de integrantes (titulares y suplentes), siendo opcional el funcionario que aprueba.",
+      "Los datos completos del acto de designación, la información del funcionario que aprueba y la lista detallada de los integrantes.",
+      "Solo el número de la resolución de designación.",
     ],
-    correct: 3,
+    correct: 2,
   },
   {
     id: 16,
     question:
-      "Una entidad convoca una Subasta Inversa Electrónica para la adquisición de bienes por un valor de S/ 500,000.00. Un postor desea apelar el otorgamiento de la buena pro. Considerando la Ley de Presupuesto Público 32185 para el año 2025, ¿cuál es el plazo que tiene para interponer el recurso de apelación, según el Reglamento?",
+      "Una empresa culmina un contrato con calificación 'A'. Meses después, en otra licitación, el comité no considera esta calificación. ¿Es válida la actuación de la entidad?",
     options: [
-      "Tres días hábiles, por ser Subasta Inversa Electrónica y superar un monto específico.",
-      "Cinco días hábiles, ya que la cuantía, aunque supera los S/485,000.00, no activa el plazo extendido para Subastas Inversas.",
-      "Ocho días hábiles, porque la cuantía de S/ 500,000.00 corresponde a la de una Licitación Pública, activando el plazo extendido para la apelación en Subasta Inversa Electrónica.",
-      "Cinco días hábiles, independientemente de la cuantía en una Subasta Inversa Electrónica, ya que es el plazo general para este tipo de procedimiento.",
+      "Sí, porque la evaluación pasada no es vinculante.",
+      "Sí, si se trata de otro objeto contractual.",
+      "No, porque la calificación A genera incentivos establecidos en el Reglamento.",
+      "No, salvo que lo autorice la DGA.",
     ],
     correct: 2,
   },
   {
     id: 17,
     question:
-      "Si una entidad declara la nulidad de oficio de un procedimiento de selección antes del otorgamiento de la buena pro, y un participante desea impugnar dicha declaración, ¿ante qué instancia debe presentar su recurso de apelación, independientemente de la cuantía del procedimiento?",
+      "En un concurso para consultoría jurídica, el comité está integrado por un ingeniero, un economista y un técnico administrativo. ¿Qué incumplimiento se configura?",
     options: [
-      "Ante la misma autoridad de la gestión administrativa que declaró la nulidad.",
-      "Ante el Titular de la Entidad.",
-      "Ante el Tribunal de Contrataciones Públicas del OECE.",
-      "Ante el Poder Judicial directamente.",
-    ],
-    correct: 2,
-  },
-  {
-    id: 18,
-    question:
-      "Un postor participa en una Licitación Pública. Durante la evaluación, su oferta es descalificada por no cumplir un requisito técnico esencial. Posteriormente, la entidad otorga la buena pro a otro postor. El postor descalificado decide apelar directamente el otorgamiento de la buena pro, argumentando que la oferta ganadora tiene un precio muy elevado, pero en su recurso no cuestiona de ninguna manera su propia descalificación. En esta situación, el recurso de apelación será declarado improcedente porque el impugnante",
-    options: [
-      "no presentó la garantía correspondiente al monto total del procedimiento",
-      "carece de interés para obrar, al no haber cuestionado ni revertido su propia descalificación previa",
-      "interpuso el recurso fuera del plazo establecido para apelar el otorgamiento de la buena pro",
-      "no identificó correctamente la nomenclatura del procedimiento de selección en su escrito",
+      "Falta de imparcialidad del comité.",
+      "Evaluación sin competencias técnicas adecuadas.",
+      "Ausencia de quórum en el comité.",
+      "Error de convocatoria en el SEACE.",
     ],
     correct: 1,
   },
   {
+    id: 18,
+    question:
+      "Para una obra de 'Diseño y Construcción' de S/ 15 000 000,00, ¿cómo se evaluaría la oferta económica?",
+    options: [
+      "Se evalúa sobre 100 puntos considerando el costo total.",
+      "La oferta económica del diseño es fija.",
+      "El costo de la ejecución es fijo al 100% de la cuantía y se evalúa económicamente solo el costo del diseño.",
+      "Se evalúa con puntaje inversamente proporcional al monto total.",
+    ],
+    correct: 2,
+  },
+  {
     id: 19,
     question:
-      "La normativa de contrataciones públicas busca evitar que un proveedor que se encuentra impedido para contratar con el Estado utilice a otras personas naturales o jurídicas para seguir participando en procesos de selección o suscribiendo contratos. ¿Cuál de las siguientes situaciones describe mejor una conducta que configuraría un intento de eludir un impedimento, según el espíritu del Artículo 30 de la Ley General de Contrataciones Públicas?",
+      "En una elevación de consultas al OECE, ¿cuál es el plazo máximo del OECE para notificar su pronunciamiento y qué sucede si solicita información adicional?",
     options: [
-      "Un proveedor que, tras cumplir su sanción de inhabilitación, se reinscribe en el RNP y participa nuevamente en contrataciones.",
-      "Una persona jurídica que, sin tener relación alguna con un proveedor impedido, participa en un proceso de selección del mismo rubro.",
-      "Una persona natural que constituye una nueva empresa del mismo rubro, con el objetivo de que esta participe en contrataciones, cuando dicha persona natural se encuentra con una inhabilitación vigente para contratar con el Estado.",
-      "Un proveedor que, estando habilitado, decide no participar en un procedimiento de selección por considerarlo no rentable.",
+      "Diez días hábiles; el plazo no se prorroga.",
+      "Quince días hábiles; el plazo se prorroga automáticamente.",
+      "Diez días hábiles desde el registro o desde recibida la información solicitada; el plazo se contabiliza desde el último de estos eventos.",
+      "Siete días hábiles; no puede solicitar información adicional.",
     ],
     correct: 2,
   },
   {
     id: 20,
     question:
-      "En un Concurso Público Abreviado, la buena pro fue notificada el martes 2. Un postor presenta apelación el jueves 11. ¿Este recurso es procedente?",
+      "¿Qué tipo de pronunciamientos del Tribunal de Contrataciones (TCP) debe considerar un comité como criterio interpretativo relevante?",
     options: [
-      "Sí, si se presentó dentro del horario laboral",
-      "No, porque venció el plazo legal",
-      "Sí, si no se firmó el contrato",
-      "Procede si no hay otros postores perjudicados",
-    ],
-    correct: 1,
-  },
-  {
-    id: 21,
-    question:
-      "Una entidad está por suscribir un contrato de obra. La Dependencia Encargada de las Contrataciones (DEC) verifica que el postor ganador tiene multas impagas por infracciones a la Ley de Contrataciones. ¿Qué acción debe tomar la entidad antes de suscribir el contrato?",
-    options: [
-      "Exigir el pago inmediato de las multas como condición previa a la firma.",
-      "Proceder a la firma del contrato e iniciar un proceso coactivo para el cobro de las multas.",
-      "Incorporar una cláusula de compromiso de pago de la multa, la que se efectúa a través de la retención del monto adeudado.",
-      "Descalificar al postor y llamar al segundo lugar, ya que las multas impagas constituyen un impedimento.",
+      "Únicamente las resoluciones sancionadoras.",
+      "Las opiniones consultivas.",
+      "Los precedentes de observancia obligatoria.",
+      "Los informes de supervisión del OECE.",
     ],
     correct: 2,
   },
   {
+    id: 21,
+    question:
+      "Una entidad perfecciona un contrato mientras un recurso de apelación está en trámite. ¿Cuál es la validez de dicho contrato?",
+    options: [
+      "Es válido, pero su ejecución se suspende.",
+      "Es válido, no le afecta el recurso.",
+      "Su validez dependerá del resultado del recurso.",
+      "El contrato es nulo, porque los actos posteriores a la interposición del recurso son nulos.",
+    ],
+    correct: 3,
+  },
+  {
     id: 22,
     question:
-      "En un contrato de obra, el contratista solicita una ampliación de plazo debido a atrasos generados por la demora de la entidad en la entrega de una parte del terreno. El supervisor emite su opinión técnica y la entidad debe resolver. Si la entidad no notifica su decisión al contratista dentro del plazo de diez días hábiles establecido en el Reglamento, ¿cuál es la consecuencia?",
+      "Para una Subasta Inversa de S/ 500,000.00, ¿cuál es el plazo para interponer un recurso de apelación?",
     options: [
-      "La solicitud de ampliación de plazo se considera automáticamente denegada.",
-      "Se debe iniciar un procedimiento de solución de controversias para definir el plazo.",
-      "La solicitud de ampliación de plazo se tiene por aprobada, salvo que el contratista no haya cumplido estrictamente con el procedimiento.",
-      "El contratista debe presentar nuevamente su solicitud con mayor sustento.",
+      "Tres días hábiles.",
+      "Cinco días hábiles.",
+      "Ocho días hábiles, porque la cuantía corresponde a la de una Licitación Pública.",
+      "Cinco días hábiles, independientemente de la cuantía.",
     ],
     correct: 2,
   },
   {
     id: 23,
     question:
-      "Una entidad aprueba una ampliación de plazo en un contrato de obra. Como consecuencia directa de esta ampliación, el contrato de supervisión de dicha obra también debe extenderse. ¿Se considera esta extensión del contrato de supervisión como una prestación adicional sujeta al límite del 25% del contrato original de supervisión?",
+      "Si una entidad declara la nulidad de oficio de un procedimiento antes de la buena pro, ¿ante qué instancia se debe apelar, independientemente de la cuantía?",
     options: [
-      "Sí, toda extensión de plazo en la supervisión es un adicional y está sujeta al límite del 25%.",
-      "No, las ampliaciones de plazo en supervisión nunca generan costos adicionales para la entidad.",
-      "Sí, pero el límite aplicable es del 15% por tratarse de un contrato vinculado.",
-      "No, si la extensión de la supervisión deriva directamente de una ampliación de plazo de la obra principal y no implica variación de actividades del supervisor, no se considera adicional.",
+      "Ante la misma autoridad que declaró la nulidad.",
+      "Ante el Titular de la Entidad.",
+      "Ante el Tribunal de Contrataciones Públicas del OECE.",
+      "Ante el Poder Judicial.",
     ],
-    correct: 3,
+    correct: 2,
   },
   {
     id: 24,
     question:
-      "Si se aprueban prestaciones adicionales de obra por deficiencias en el expediente técnico en un contrato bajo el sistema de entrega de solo construcción, ¿qué consecuencia administrativa adicional se genera para la entidad, además de la modificación contractual?",
+      "Un postor descalificado apela la buena pro de otro, pero sin cuestionar su propia descalificación. El recurso será declarado improcedente porque el impugnante...",
     options: [
-      "La entidad debe iniciar un nuevo procedimiento de selección para la supervisión del adicional.",
-      "La entidad debe informar al Tribunal de Contrataciones Públicas y a la Contraloría General de la República para los fines correspondientes.",
-      "El contratista asume la responsabilidad por las deficiencias del expediente técnico y no tiene derecho al pago del adicional.",
-      "La entidad debe solicitar una opinión vinculante al OECE sobre la procedencia del adicional.",
+      "no presentó la garantía.",
+      "carece de interés para obrar, al no haber cuestionado ni revertido su propia descalificación.",
+      "interpuso el recurso fuera de plazo.",
+      "no identificó bien el procedimiento.",
     ],
     correct: 1,
   },
   {
     id: 25,
     question:
-      "Aun cuando se verifique la configuración de un vicio de nulidad del contrato, ¿qué facultad excepcional tiene la autoridad de la gestión administrativa?",
+      "¿Cuál de las siguientes situaciones configura un intento de eludir un impedimento para contratar con el Estado?",
     options: [
-      "Modificar la causal de nulidad para evitar la resolución.",
-      "Autorizar la continuación de la ejecución del contrato, previos informes técnico y legal favorables que sustenten la necesidad basada en un análisis costo-beneficio.",
-      "Imponer una multa al contratista en lugar de declarar la nulidad.",
-      "Solicitar al Tribunal de Contrataciones que convalide el contrato.",
+      "Un proveedor que, tras cumplir su sanción, se reinscribe en el RNP.",
+      "Una empresa sin relación con un proveedor impedido participa en un proceso.",
+      "Una persona natural con inhabilitación vigente constituye una nueva empresa para que esta participe en contrataciones.",
+      "Un proveedor habilitado decide no participar en un proceso.",
     ],
-    correct: 1,
+    correct: 2,
   },
   {
     id: 26,
     question:
-      "En los contratos estandarizados de ingeniería y construcción de uso internacional, si las modificaciones que inciden en el monto contractual superan el ______ del valor del presupuesto de obra consignado en el expediente técnico aprobado (o del monto del contrato de obra), se configura la condición de terminación anticipada que ocasiona la resolución del contrato.",
-    options: ["25%", "30%", "40%", "50%"],
-    correct: 3,
+      "En un Concurso Público Abreviado, la buena pro fue notificada el martes 2. Un postor apela el jueves 11. ¿Es procedente el recurso?",
+    options: [
+      "Sí, si se presentó en horario laboral.",
+      "No, porque venció el plazo legal.",
+      "Sí, si no se firmó el contrato.",
+      "Procede si no hay otros perjudicados.",
+    ],
+    correct: 1,
   },
   {
     id: 27,
     question:
-      "Una entidad pública y un contratista sometieron a arbitraje una controversia sobre el pago de valorizaciones, emitiéndose un laudo definitivo a favor del contratista. Meses después, la Oficina de Control Institucional (OCI) detecta que el contrato original se perfeccionó a pesar de que el proveedor se encontraba impedido para contratar con el Estado al momento de la suscripción, una causal de nulidad prevista en el Artículo 71.1(a) de la Ley General de Contrataciones Públicas. Esta causal de impedimento no fue advertida ni discutida durante el proceso arbitral. ¿Puede la autoridad de la gestión administrativa declarar la nulidad de dicho contrato?",
+      "Un postor ganador tiene multas impagas. ¿Qué debe hacer la entidad antes de suscribir el contrato?",
     options: [
-      "No, el laudo arbitral es definitivo y ha saneado cualquier vicio contractual preexistente, incluyendo los impedimentos.",
-      "Sí, pero únicamente si el Titular de la Entidad autoriza expresamente la declaración de nulidad y se demuestra que el árbitro actuó con negligencia.",
-      "Sí, la autoridad de la gestión administrativa puede declarar la nulidad del contrato por la causal de proveedor impedido, ya que esta es una potestad de la entidad para vicios que afectan el orden público y no fue materia del arbitraje anterior.",
-      "Solo podría hacerlo el Poder Judicial a través de un proceso de revisión del contrato, previa anulación del laudo arbitral.",
+      "Exigir el pago inmediato.",
+      "Firmar el contrato e iniciar un proceso coactivo.",
+      "Incorporar una cláusula de compromiso de pago de la multa, que se efectúa a través de la retención del monto adeudado.",
+      "Descalificar al postor.",
     ],
     correct: 2,
   },
   {
     id: 28,
     question:
-      "En un contrato de obra, si se aprueba una prestación adicional, ¿cuándo puede el contratista solicitar una ampliación de plazo por esta causal?",
+      "Si la entidad no notifica su decisión sobre una ampliación de plazo dentro de los diez días hábiles, ¿cuál es la consecuencia?",
     options: [
-      "Automáticamente con la aprobación del adicional, sin necesidad de solicitud.",
-      "Solo si la ejecución de la prestación adicional afecta la ruta crítica del programa de ejecución vigente.",
-      "Únicamente si el costo del adicional supera el 5% del monto del contrato.",
-      "En cualquier momento, incluso después de haber ejecutado el adicional.",
+      "Se considera denegada.",
+      "Se inicia una solución de controversias.",
+      "Se tiene por aprobada, salvo que el contratista no haya cumplido el procedimiento.",
+      "El contratista debe presentarla de nuevo.",
     ],
-    correct: 1,
+    correct: 2,
   },
   {
     id: 29,
     question:
-      "Una entidad decide intervenir económicamente una obra debido a graves incumplimientos del contratista que impedían su culminación. El contratista rechaza la intervención económica. ¿Cuál es la consecuencia directa de este rechazo por parte del contratista?",
+      "Una ampliación de plazo en una obra obliga a extender el contrato de supervisión. ¿Se considera esta extensión como una prestación adicional sujeta al límite del 25%?",
     options: [
-      "El contrato es resuelto por incumplimiento del contratista.",
-      "La entidad debe iniciar un proceso de conciliación para convencer al contratista.",
-      "El contratista debe proponer un nuevo cronograma acelerado de trabajos.",
-      "Se suspende la intervención económica y se busca un nuevo supervisor.",
+      "Sí, toda extensión es un adicional sujeto al límite del 25%.",
+      "No, las ampliaciones en supervisión no generan costos.",
+      "Sí, pero el límite es del 15%.",
+      "No, si deriva directamente de la ampliación de la obra principal y no implica variación de actividades del supervisor, no se considera adicional.",
     ],
-    correct: 0,
+    correct: 3,
   },
   {
     id: 30,
     question:
-      "Un contratista presenta un nuevo programa de ejecución con aceleración de trabajos debido a un retraso injustificado. Posteriormente, el supervisor verifica que el monto de la valorización acumulada ejecutada es menor al 80% del monto acumulado programado de este nuevo calendario. ¿Qué consecuencia podría acarrear este segundo incumplimiento para el contratista?",
+      "Si se aprueban adicionales de obra por deficiencias del expediente técnico, ¿qué consecuencia administrativa adicional se genera para la entidad?",
     options: [
-      "El contratista solo estaría sujeto a la aplicación de la penalidad por mora.",
-      "El supervisor debe otorgar un nuevo plazo para presentar otro programa de aceleración.",
-      "Dicho retraso puede ser considerado como causal de resolución del contrato o de intervención económica de la obra, no siendo necesario apercibimiento.",
-      "La entidad debe aprobar automáticamente una ampliación de plazo para compensar el retraso.",
+      "Iniciar un nuevo proceso para la supervisión del adicional.",
+      "Informar al Tribunal de Contrataciones Públicas y a la Contraloría General de la República.",
+      "El contratista asume la responsabilidad y no tiene derecho al pago.",
+      "Solicitar una opinión vinculante al OECE.",
+    ],
+    correct: 1,
+  },
+  {
+    id: 31,
+    question:
+      "Aun cuando exista un vicio de nulidad, ¿qué facultad excepcional tiene la autoridad de la gestión administrativa?",
+    options: [
+      "Modificar la causal de nulidad.",
+      "Autorizar la continuación de la ejecución del contrato, con informes técnico y legal favorables que sustenten la necesidad en un análisis costo-beneficio.",
+      "Imponer una multa en lugar de declarar la nulidad.",
+      "Solicitar al Tribunal que convalide el contrato.",
+    ],
+    correct: 1,
+  },
+  {
+    id: 32,
+    question:
+      "En contratos estandarizados internacionales, si las modificaciones superan el ______ del valor del presupuesto de obra, se configura la terminación anticipada.",
+    options: ["25%", "30%", "40%", "50%"],
+    correct: 3,
+  },
+  {
+    id: 33,
+    question:
+      "Un laudo arbitral definitivo fue emitido. Meses después, se detecta que el proveedor estaba impedido al momento de firmar el contrato, una causal de nulidad no discutida en el arbitraje. ¿Puede la entidad declarar la nulidad del contrato?",
+    options: [
+      "No, el laudo saneó cualquier vicio.",
+      "Sí, pero solo con autorización del Titular de la Entidad.",
+      "Sí, la autoridad puede declarar la nulidad por la causal de proveedor impedido, ya que es una potestad de la entidad para vicios que afectan el orden público y no fue materia del arbitraje anterior.",
+      "Solo el Poder Judicial podría hacerlo.",
     ],
     correct: 2,
+  },
+  {
+    id: 34,
+    question:
+      "Si se aprueba una prestación adicional en una obra, ¿cuándo puede el contratista solicitar una ampliación de plazo por esta causal?",
+    options: [
+      "Automáticamente con la aprobación del adicional.",
+      "Solo si la ejecución de la prestación adicional afecta la ruta crítica del programa de ejecución vigente.",
+      "Únicamente si el costo del adicional supera el 5% del contrato.",
+      "En cualquier momento, incluso después de ejecutar el adicional.",
+    ],
+    correct: 1,
+  },
+  {
+    id: 35,
+    question:
+      "Una entidad decide intervenir económicamente una obra, pero el contratista rechaza la intervención. ¿Cuál es la consecuencia directa?",
+    options: [
+      "El contrato es resuelto por incumplimiento del contratista.",
+      "La entidad debe iniciar una conciliación.",
+      "El contratista debe proponer un nuevo cronograma.",
+      "Se suspende la intervención económica.",
+    ],
+    correct: 0,
+  },
+  {
+    id: 36,
+    question:
+      "Un contratista incumple un nuevo programa de ejecución con aceleración de trabajos. ¿Qué consecuencia podría acarrear este segundo incumplimiento?",
+    options: [
+      "Solo la aplicación de la penalidad por mora.",
+      "El supervisor debe otorgar un nuevo plazo.",
+      "Dicho retraso puede ser considerado como causal de resolución del contrato o de intervención económica de la obra, no siendo necesario apercibimiento.",
+      "La entidad debe aprobar una ampliación de plazo.",
+    ],
+    correct: 2,
+  },
+  {
+    id: 37,
+    question:
+      "En una obra, la entidad no cumple con absolver una consulta del contratista en el cuaderno de incidencias a tiempo, impactando la ruta crítica. ¿Qué tipo de controversia podría surgir?",
+    options: [
+      "Una controversia relacionada con la solicitud de ampliación de plazo y el reconocimiento de mayores gastos generales.",
+      "Una controversia sobre la calidad de los materiales.",
+      "Una controversia sobre la validez de la garantía de fiel cumplimiento.",
+      "Una controversia sobre la necesidad de ejecutar prestaciones adicionales.",
+    ],
+    correct: 0,
+  },
+  {
+    id: 38,
+    question:
+      "Para una obra de más de S/ 10 000 000,00, surge una controversia técnica. ¿Qué mecanismo debe agotarse primero antes del arbitraje?",
+    options: [
+      "Trato directo.",
+      "La Junta de Prevención y Resolución de Disputas (JPRD), ya que su uso es obligatorio para obras de esa cuantía.",
+      "La Conciliación.",
+      "Una consulta técnica al OECE.",
+    ],
+    correct: 1,
+  },
+  {
+    id: 39,
+    question:
+      "El contratista de una obra debe presentar al supervisor, dentro de los doce días de la suscripción, un informe técnico de revisión del...",
+    options: [
+      "contrato.",
+      "expediente técnico para detectar posibles deficiencias.",
+      "cronograma de pagos.",
+      "plan de seguridad.",
+    ],
+    correct: 1,
+  },
+  {
+    id: 40,
+    question:
+      "En una obra, el supervisor no emite su opinión sobre una ampliación de plazo en el tiempo debido. ¿Cómo debe proceder la entidad?",
+    options: [
+      "Dar respuesta a la solicitud sin el pronunciamiento del supervisor, sin perjuicio de aplicar penalidades a este último.",
+      "Otorgar al supervisor un plazo adicional.",
+      "Denegar automáticamente la solicitud.",
+      "Devolver la solicitud al contratista.",
+    ],
+    correct: 0,
+  },
+  {
+    id: 41,
+    question:
+      "En una Compra Corporativa Facultativa, una entidad participante desea desistirse tras la aprobación del expediente. ¿Bajo qué supuestos puede hacerlo?",
+    options: [
+      "Por cualquier motivo, comunicando con anticipación.",
+      "Únicamente cuando desaparezca la necesidad o por recorte presupuestal derivado de norma expresa, previa aprobación del titular de la entidad.",
+      "Si el proveedor seleccionado no cumple sus expectativas.",
+      "Solo si la entidad encargada lo autoriza.",
+    ],
+    correct: 1,
+  },
+  {
+    id: 42,
+    question:
+      "Para viabilizar una compra centralizada encargada a Perú Compras, ¿qué acción presupuestal es fundamental?",
+    options: [
+      "Solicitar un crédito suplementario.",
+      "Realizar una transferencia de partidas a Perú Compras.",
+      "Perú Compras asume el costo con su propio presupuesto.",
+      "Firmar un convenio de cooperación sin transferencia de fondos.",
+    ],
+    correct: 1,
+  },
+  {
+    id: 43,
+    question:
+      "Una entidad utiliza un 'contrato de contingencia' con 'pago por disponibilidad'. ¿Cuál es el plazo mínimo y qué sucede si el evento de activación no ocurre?",
+    options: [
+      "Un año; se resuelve sin pago.",
+      "No hay plazo mínimo; se mantiene vigente.",
+      "Cinco años; se paga 50% como compensación.",
+      "Tres años; la entidad puede ampliar el plazo, recibir los bienes o modificar el contrato para uso en prevención.",
+    ],
+    correct: 3,
+  },
+  {
+    id: 44,
+    question:
+      "El postor ganador pierde la buena pro por no perfeccionar el contrato. La entidad requiere al segundo lugar, pero este tampoco perfecciona. ¿Qué debe hacer la entidad?",
+    options: [
+      "Requerir al tercer lugar.",
+      "Declarar desierto el procedimiento de selección.",
+      "Convocar un nuevo procedimiento con los mismos postores.",
+      "Otorgar un plazo adicional al segundo lugar.",
+    ],
+    correct: 1,
+  },
+  {
+    id: 45,
+    question:
+      "Al postor ganador le falta presentar la garantía de fiel cumplimiento. ¿Qué acción puede tomar la DEC?",
+    options: [
+      "Otorgar un plazo adicional de hasta cuatro días hábiles para la presentación de la garantía, a solicitud expresa del postor.",
+      "Perfeccionar el contrato sin la garantía.",
+      "Declarar la pérdida automática de la buena pro.",
+      "Requerir al segundo lugar.",
+    ],
+    correct: 0,
+  },
+  {
+    id: 46,
+    question: "En un contrato de obra, ¿hasta qué momento rige el contrato?",
+    options: [
+      "Hasta la recepción total de la obra.",
+      "Hasta el pago de la última valorización.",
+      "Hasta el consentimiento de la liquidación final del contrato y el pago correspondiente.",
+      "Hasta la culminación del plazo por vicios ocultos.",
+    ],
+    correct: 2,
+  },
+  {
+    id: 47,
+    question:
+      "Se promulga una nueva ley que incrementa el sueldo mínimo, afectando los costos de mano de obra del contratista. ¿Cuál sería el sustento para una posible modificación contractual?",
+    options: [
+      "La potestad de la entidad para ordenar adicionales.",
+      "La configuración de un hecho sobreviniente no imputable a las partes que afecta el equilibrio económico financiero.",
+      "La necesidad de reducir otras prestaciones.",
+      "La aplicación de la cláusula de resolución.",
+    ],
+    correct: 1,
+  },
+  {
+    id: 48,
+    question:
+      "Antes de declarar la nulidad de oficio de un contrato, ¿qué acción debe realizar la entidad contratante respecto al contratista?",
+    options: [
+      "Solicitar la aprobación previa del OECE.",
+      "Publicar la intención de nulidad en la Pladicop.",
+      "Ejecutar inmediatamente la garantía.",
+      "Correr traslado al contratista para que se pronuncie.",
+    ],
+    correct: 3,
+  },
+  {
+    id: 49,
+    question:
+      "Si una controversia sobre un contrato de obra es resuelta por la JPRD, ¿la opinión emitida es vinculante para las partes?",
+    options: [
+      "No, es solo una recomendación.",
+      "Sí, es vinculante y de obligatorio cumplimiento para las partes.",
+      "Solo es vinculante si ambas partes la aceptan expresamente.",
+      "Solo es vinculante para el contratista.",
+    ],
+    correct: 1,
+  },
+  {
+    id: 50,
+    question:
+      "¿En qué casos la entidad puede retener el 10% del monto del contrato original como garantía de fiel cumplimiento en lugar de exigir la presentación de una carta fianza o póliza de caución?",
+    options: [
+      "En todos los contratos de obra.",
+      "Solo en contrataciones de bienes y servicios, distintas a consultoría de obras, que se perfeccionen con la notificación de la orden de compra o servicio y cuyo monto no supere los S/ 200,000.00.",
+      "En cualquier contrato, a solicitud del contratista.",
+      "Únicamente en contratos con MYPEs.",
+    ],
+    correct: 1,
   },
 ];

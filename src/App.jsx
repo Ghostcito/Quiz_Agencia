@@ -8,12 +8,19 @@ import Results from "./components/Results";
 import StartExam from "./components/StartExam";
 
 // Función para seleccionar 10 preguntas aleatorias
-const getRandomQuestions = () =>
-  questions.sort(() => Math.random() - 0.5).slice(0, 10);
+// const getRandomQuestions = () =>
+//   questions.sort(() => Math.random() - 0.5).slice(0, 10);
+
+// Función para obtener las 10 primer preguntas
+const getFirtTenQuestions = () => questions.slice(0, 10);
 
 function App() {
+  // const [selectedQuestions, setSelectedQuestions] =
+  //   useState(getRandomQuestions);
+
   const [selectedQuestions, setSelectedQuestions] =
-    useState(getRandomQuestions);
+    useState(getFirtTenQuestions);
+
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState([]);
   const [timeLeft, setTimeLeft] = useState(900); // 15 minutes in seconds
@@ -25,7 +32,7 @@ function App() {
   const handleStart = () => {
     setStartExam(true);
     setTimeLeft(900);
-    setSelectedQuestions(getRandomQuestions());
+    setSelectedQuestions(getFirtTenQuestions());
     setCurrentQuestion(0);
     setAnswers([]);
   };
